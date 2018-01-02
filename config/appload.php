@@ -26,7 +26,7 @@
     * Si l'application se trouve dans un sous dossier, veuillez taper le chemin relatif vers le sous dossier 
     * contenant l'application avec tout ses fichiers
     */
-    define('DOMAIN', '/apps2/');
+    define('DOMAIN', '/');
 
     /**
     * Configuration base de données
