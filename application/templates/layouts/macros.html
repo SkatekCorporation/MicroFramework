@@ -1,0 +1,27 @@
+{% macro input(name, value, type, size) %}
+    <input type="{{ type|default('text') }}" name="{{ name }}" value="{{ value|e }}" size="{{ size|default(20) }}" />
+{% endmacro %}
+
+{% macro getcss(file) %}
+<link rel="stylesheet" href="{{ css ~ file|default('styles') ~ '.css' }}" />
+{% endmacro %}
+
+{% macro getjs(file) %}
+<script src="{{ js ~ file|default('scripts') ~ '.js' }}"></script>
+{% endmacro %}
+
+{% macro getimg(file, class, alt) %}
+<img src="{{ img ~ file }}" alt="{{ alt }}" class="{{ class|default('image') }}">
+{% endmacro %}
+
+{% macro bootstrapcss() %}
+    <link rel="stylesheet" href="{{ css ~ 'bootstrap.min.css' }}" />
+{% endmacro %}
+
+{% macro bootstrapjs() %}
+    <script src="{{ js ~ 'bootstrap.min.js' }}"></script>
+{% endmacro %}
+
+{% macro jquery() %}
+    <script src="{{ js ~ 'jquery.min.js' }}"></script>
+{% endmacro %}

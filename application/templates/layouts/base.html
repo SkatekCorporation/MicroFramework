@@ -1,0 +1,31 @@
+<! DOCTYPE html>
+{% import "macros.html" as this %}
+
+<html>
+    <head>
+        {% block entete %}
+        <title>{{ title|default('Page Framework') }} :: {{ application|default('Skatek Framework') }}</title>
+        {{ this.bootstrapcss() }}
+        {% endblock %}
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                {% block header %}
+                    <h1 class="page-header">{{title}}</h1>
+                {% endblock %}
+            </div>
+            <div>
+                {% block corps %}{% endblock %}
+            </div>
+            <div id="footer" class="footer">
+                {% block footer %}
+                    <hr>
+                    &copy; 2017, Skatek Corporation
+                {% endblock %}
+            </div>
+        </div>        
+        {{ this.jquery() }}
+        {{ this.bootstrapjs() }}
+    </body>
+</html>

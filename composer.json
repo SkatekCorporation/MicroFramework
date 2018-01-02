@@ -1,0 +1,21 @@
+{
+    "name": "souvenance/apps2",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Souvenance",
+            "email": "skavunga@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-0" : {
+            "Twig_" : "vendor/twig/lib/"
+        },
+        "psr-4": {
+            "App\\": "application",
+            "Twig\\" : "vendor/twig/src/"
+        }
+    }
+}
