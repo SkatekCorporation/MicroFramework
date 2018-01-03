@@ -1,5 +1,6 @@
 {
     "name": "skatek/microframework",
+    "description": "Developper rapidement votre application PHP avec le model MVC",
     "type": "project",
     "license": "MIT",
     "authors": [
